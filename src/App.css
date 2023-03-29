@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+.app-parent {
+  background-color: #222222;
+  width: 100vw;
+  height: 100vh;
+  min-height: 10rem;
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-body-cont {
+  background-color: #333333;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-controls-parent {
+  height: 15rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-bottom: 5px solid #222222;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-controls-left {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 0 0 0rem;
 }
 
-.App-link {
-  color: #61dafb;
+#regions-select {
+  height: 2rem;
+  width: 15rem;
+  margin: 0.5rem 0 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-controls-middle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-controls-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-controls-cont,
+.seed-controls-cont {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#errors-slider {
+  width: 20rem;
+  margin: 0.5rem 0 0 0;
+}
+
+#errors-number {
+  width: 5rem;
+  height: 2rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.seed-manual-cont {
+  display: flex;
+  align-items: center;
+}
+
+#seed-number {
+  width: 5rem;
+  height: 2rem;
+}
+
+#seed-current-label {
+  font-size: 18px;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.entries-parent {
+  height: 45rem;
+  overflow: auto;
+  background-color: rgb(249, 246, 246);
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+.table-id {
+  width: 30%;
+}
+
+.entry-cont {
+}
+
+.entry-info-cont {
+  width: 100%;
+  display: flex;
+  margin: 1rem 0 0 0;
+}
+
+.entry-info-fields-cont {
+  margin: 0 0 0 2rem;
+}
+.entry-info-values-cont {
+  margin: 0 0 0 2rem;
+}
+
+.entry-info-field {
+  line-height: 1.5;
+}
+.entry-info-value {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.horizontal-separator {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.export-csv-parent {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  border-top: 5px solid #222222;
+}
+
+.export-csv-cont {
 }
