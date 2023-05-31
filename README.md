@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Web-приложение для генерации фейковых пользовательских данных
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Этот репозиторий содержит исходный код для веб-приложения, разработанного на стеке Node + React + Bootstrap-React.<br> Приложение предоставляет возможность генерировать фейковые пользовательские данные на основе выбранных параметров.
 
-## Available Scripts
+## Основные функции
+* **Выбор региона:** Пользователь может выбрать регион из списка, например, США, Россия, Украина.
+* **Управление количеством ошибок:** Пользователь может установить количество ошибок на одну запись, используя слайдер и поле ввода. Возможные значения от 0 до 10.
+* **Seed:** Пользователь может указать seed для генерации случайных данных.
+* **Динамическая перегенерация:** При изменении любого из параметров, таблица с данными перегенерируется.
+* **Бесконечный скроллинг:** Изначально отображается 20 записей, при прокрутке вниз автоматически догружаются ещё 10 записей.
 
-In the project directory, you can run:
+## Структура таблицы
+Таблица отображает сгенерированные данные следующим образом:
 
-### `npm start`
+Номер<br>
+Случайный идентификатор<br>
+ФИО (имя, фамилия)<br>
+Адрес (в различных форматах, включая область, город, улицу, дом и т.д)<br>
+Телефон (в различных форматах)<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Генерация данных
+* Язык имени, адреса и номера телефона соответствует выбранному региону, чтобы данные выглядели реалистично.
+* Количество ошибок определяет эмуляцию неправильного ввода данных. Возможные типы ошибок: удаление одного символа в случайной позиции, добавление одного случайного символа в случайной позиции, перестановка двух соседних символов.
+* Значение числа ошибок можно изменять как с помощью слайдера, так и вручную в поле ввода. Изменение одного контрола автоматически синхронизирует другой.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Примечание
+Приложение предоставляет возможность работать сразу, без необходимости регистрации или аутентификации.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
